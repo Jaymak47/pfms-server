@@ -234,10 +234,16 @@ module.exports = gql`
   }
 
   input TargetInputUpdate {
+    targetno: String
+    targetname: String
+    agreedPerformance: String
+    performanceIndicator: String
     selfScore: String
     supervisorScore: String
     jointScore: String
     achievedResult: String
+    startdate: DateTime
+    enddate: DateTime
   }
 
   input RegisterInput {

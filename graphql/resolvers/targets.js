@@ -168,12 +168,6 @@ module.exports = {
         achievedResult,
       } = args.target;
 
-      if (selfScore.trim() === "") {
-        throw new Error("Self Score No must not be empty");
-      }
-      if (achievedResult.trim() === "") {
-        throw new Error("Achieved Result No must not be empty");
-      }
       try {
         //const department = await Target.findById(args._id);
         if (user.username) {
